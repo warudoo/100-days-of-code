@@ -42,8 +42,8 @@ Here I will document my daily progress, challenges, and key learnings.
 
 | Day | Date          | Topics / Tasks Learned                                      | Link to Code                                        |
 |:---:|:--------------|:------------------------------------------------------------|:----------------------------------------------------|
-| 001 | Jun 15, 2025  | Set up development environment (Python, Git). Created this repo and structured the folders. Wrote a simple "Hello, World!" script. | [`Day 01`](.01-Python-Fundamentals/day_one.py)         |
-| 001 | Jun 15, 2025  | Learn how to setup a varibles and also about how python indentation is so important in python | [`Day 01`](.01-Python-Fundamentals/day_one_Varibles.py)         |
+| 001 | Jun 15, 2025  | Set up development environment (Python, Git). Created this repo and structured the folders. Wrote a simple "Hello, World!" script. | [`Day 01`](01-Python-Fundamentals/day_one.py)         |
+| 001 | Jun 15, 2025  | Learn how to setup a varibles and also about how python indentation is so important in python | [`Day 01`](01-Python-Fundamentals/day_one_Variables,py)         |
 | 002 | Jun 16, 2025  | *Your tasks here...* | `[Link to Day 02 folder]`                           |
 | 003 | Jun 17, 2025  | *Your tasks here...* | `[Link to Day 03 folder]`                           |
 | ... | ...           | ...                                                         | ...                                                 |
