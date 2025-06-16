@@ -40,3 +40,21 @@ x, y, z = fruits
 print(x)
 print(y)
 print(z)
+
+#global varibles
+x = "awesomeas"
+def myfunc():
+    print("Python is " + x)
+myfunc()
+# local varibles
+# The following code will raise an error because 'x' is not defined outside the function
+
+def myfunc():
+  global x 
+  x = "fantastgfdsdic"
+  print("Python issas " + x)
+
+myfunc()
+
+print("Python is " + x)
+print("Python isas " + x)
