@@ -45,6 +45,7 @@ Here I will document my daily progress, challenges, and key learnings.
 | 001 | Jun 15, 2025  | Set up development environment (Python, Git). Created this repo and structured the folders. Wrote a simple "Hello, World!" script. | [`Day 01`](01-Python-Fundamentals/001)         |
 | 001 | Jun 15, 2025  | Learn how to setup a varibles and also about how python indentation is so important in python | [`Day 01`](01-Python-Fundamentals/001)         |
 | 002 | Jun 16, 2025  | Im Learning about Python Type Data, Numbers, Also Python String | [`Day 02`](01-Python-Fundamentals/002) |
+| 002 | Jun 16, 2025  | Learn How Python Format String Works | [`Day 03`](01-Python-Fundamentals/003) |
 | 003 | Jun 17, 2025  | *Your tasks here...* | `[Link to Day 03 folder]`                           |
 | ... | ...           | ...                                                         | ...                                                 |
 | 100 | Sep 22, 2025  | *Final project review and reflection...* | `[Link to final project]`                           |
