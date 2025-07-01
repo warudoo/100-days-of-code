@@ -28,12 +28,15 @@ def show_all_contacts():
 def add_new_contact():
     """Menambah kontak baru ke dalam list."""
     print("\n--- Tambah Kontak Baru ---")
-    # TODO: Minta input dari pengguna untuk 'nama' dan 'telepon'.
-    # Buat sebuah dictionary baru untuk kontak ini.
-    # Contoh: new_contact = {"nama": nama_input, "telepon": telepon_input}
-    # Tambahkan dictionary baru tersebut ke dalam list 'contacts' menggunakan .append()
-    # Beri pesan konfirmasi bahwa kontak berhasil ditambahkan.
-    pass # Hapus 'pass' ini saat Anda mengisi kodenya
+    # Meminta input dari pengguna
+    nama = input("Masukkan nama kontak: ")
+    telepon = input("Masukkan nomor telepon: ")
+    
+    # Membuat dictionary baru untuk kontak
+    new_contact = {
+        "nama": nama,
+        "telepon": telepon
+    }
 
 def search_contact():
     """Mencari kontak berdasarkan nama."""
