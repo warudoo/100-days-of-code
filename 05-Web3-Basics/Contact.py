@@ -20,10 +20,10 @@ def show_all_contacts():
     if not contacts:
         print("Belum ada kontak yang tersimpan.")
     else:
-        # TODO: Gunakan FOR loop untuk iterasi melalui list 'contacts'.
-        # Untuk setiap 'contact' (yang merupakan dictionary), cetak nama dan nomor teleponnya.
-        # Gunakan f-string untuk output yang rapi, misal: f"{nomor}. {nama} - {telepon}"
-        pass # Hapus 'pass' ini saat Anda mengisi kodenya
+        # Menggunakan enumerate untuk mendapatkan nomor urut dan kontak sekaligus
+        for i, contact in enumerate(contacts, start=1):
+            # Mengakses nilai dari dictionary dan menampilkannya dengan f-string
+            print(f"{i}. Nama: {contact['nama']}, Telepon: {contact['telepon']}")
 
 def add_new_contact():
     """Menambah kontak baru ke dalam list."""
