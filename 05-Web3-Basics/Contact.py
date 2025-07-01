@@ -59,3 +59,26 @@ def search_contact():
         print("Hasil pencarian:")
         for i, contact in enumerate(found_contacts, start=1):
             print(f"{i}. Nama: {contact['nama']}, Telepon: {contact['telepon']}")
+            
+def delete_contact():
+    """Menghapus kontak berdasarkan nomor urut."""
+    print("\n--- Hapus Kontak ---")
+    show_all_contacts() # Tampilkan semua kontak agar pengguna tahu nomornya
+    
+    if not contacts:
+        return # Keluar dari fungsi jika tidak ada kontak
+
+    try:
+        choice_str = input("Masukkan nomor kontak yang ingin dihapus: ")
+        choice_int = int(choice_str)
+        
+        # Cek apakah nomor yang dipilih valid
+        if 1 <= choice_int <= len(contacts):
+            # Hapus kontak dari list menggunakan pop() berdasarkan index
+            # Index list dimulai dari 0, jadi kita kurangi 1
+            removed_contact = contacts.pop(choice_int - 1)
+            print(f"Kontak '{removed_contact['nama']}' berhasil dihapus.")
+        else:
+            print("Nomor tidak valid.")
+    except ValueError:
+        print("Input tidak valid. Harap masukkan angka.")
