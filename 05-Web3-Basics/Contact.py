@@ -37,8 +37,9 @@ def add_new_contact():
         "nama": nama,
         "telepon": telepon
     }
-
- contacts.append(new_contact)
+    
+    # Menambahkan dictionary baru ke dalam list 'contacts'
+    contacts.append(new_contact)
     print(f"Kontak '{nama}' berhasil ditambahkan!")
 
 def search_contact():
@@ -59,7 +60,7 @@ def search_contact():
         print("Hasil pencarian:")
         for i, contact in enumerate(found_contacts, start=1):
             print(f"{i}. Nama: {contact['nama']}, Telepon: {contact['telepon']}")
-            
+
 def delete_contact():
     """Menghapus kontak berdasarkan nomor urut."""
     print("\n--- Hapus Kontak ---")
@@ -82,3 +83,22 @@ def delete_contact():
             print("Nomor tidak valid.")
     except ValueError:
         print("Input tidak valid. Harap masukkan angka.")
+
+# --- Loop Utama Aplikasi ---
+while True:
+    display_menu()
+    choice = input("Pilih menu (1-5): ")
+
+    if choice == '1':
+        show_all_contacts()
+    elif choice == '2':
+        add_new_contact()
+    elif choice == '3':
+        search_contact()
+    elif choice == '4':
+        delete_contact()
+    elif choice == '5':
+        print("Terima kasih telah menggunakan aplikasi. Sampai jumpa!")
+        break # Menghentikan while loop
+    else:
+        print("Pilihan tidak valid. Silakan coba lagi.")
