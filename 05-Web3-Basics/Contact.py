@@ -38,11 +38,24 @@ def add_new_contact():
         "telepon": telepon
     }
 
+ contacts.append(new_contact)
+    print(f"Kontak '{nama}' berhasil ditambahkan!")
+
 def search_contact():
     """Mencari kontak berdasarkan nama."""
     print("\n--- Cari Kontak ---")
-    # TODO: Minta input dari pengguna untuk nama yang ingin dicari.
-    # Gunakan FOR loop untuk iterasi melalui list 'contacts'.
-    # Di dalam loop, gunakan IF untuk memeriksa apakah nama kontak cocok (bisa menggunakan .lower() agar tidak case-sensitive).
-    # Jika ditemukan, cetak informasi kontaknya dan hentikan pencarian (bisa gunakan 'break').
-    # Jika loop selesai dan tidak ada yang ditemukan, beri pesan "
+    search_term = input("Masukkan nama yang ingin dicari: ")
+    
+    found_contacts = []
+    # Iterasi melalui semua kontak untuk mencari yang cocok
+    for contact in contacts:
+        # Menggunakan .lower() agar pencarian tidak case-sensitive
+        if search_term.lower() in contact['nama'].lower():
+            found_contacts.append(contact)
+            
+    if not found_contacts:
+        print(f"Kontak dengan nama '{search_term}' tidak ditemukan.")
+    else:
+        print("Hasil pencarian:")
+        for i, contact in enumerate(found_contacts, start=1):
+            print(f"{i}. Nama: {contact['nama']}, Telepon: {contact['telepon']}")
